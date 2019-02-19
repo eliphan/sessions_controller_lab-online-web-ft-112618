@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
   
   def destroy
     session.delete :name if session[:name]
+    redirect_to '/'
   end
   
 end
